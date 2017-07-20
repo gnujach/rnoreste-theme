@@ -1,0 +1,24 @@
+.panels img:hover{
+  opacity: 0.55;
+}
+.panels {
+  border-top: 1px solid #fff;
+  overflow: hidden;
+}
+
+.panels img {
+    width: 100%;
+    width: auto;
+    /*max-width: initial;*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    opacity: 0.25;
+    /*-webkit-filter: saturate(0);
+    filter: saturate(0);*/
+    /*transition: opacity 250ms;*/
+}
+.panels a{
+  top: 50%;
+}
