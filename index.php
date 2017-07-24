@@ -17,7 +17,7 @@ $container   = get_theme_mod( 'understrap_container_type' );
 $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 ?>
 
-<?php if ( is_front_page() && is_home() ) : ?>
+<?php if ( is_front_page() || is_home() ) : ?>
 	<?php get_template_part( 'global-templates/hero', 'none' ); ?>
 <?php endif; ?>
 

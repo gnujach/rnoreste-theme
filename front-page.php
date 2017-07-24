@@ -9,8 +9,11 @@
  * @package Longevity
  */
 
-get_header(); ?>
-
+get_header(); 
+$container   = get_theme_mod( 'understrap_container_type' );
+$sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
+?>
+<?php get_template_part( 'global-templates/hero', 'none' ); ?>
 <div class="container">
     <div class="row" style="margin-top:20px;">
         <div class="col-sm-4">

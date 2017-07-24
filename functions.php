@@ -66,9 +66,22 @@ require get_template_directory() . '/inc/bootstrap-wp-navwalker.php';
 /**
  * Load WooCommerce functions.
  */
-require get_template_directory() . '/inc/woocommerce.php';
+// require get_template_directory() . '/inc/woocommerce.php';
 
 /**
  * Load Editor functions.
  */
 require get_template_directory() . '/inc/editor.php';
+//Consulta para modificar el loop principal y solicitar los post de tipo reconocimiento
+function get_reconocimientos( $query ) {
+    if ( $query->is_admin == 1 ) {
+        return 1;
+    }
+    if ( !$query->is_main_query()) {
+        return 1;
+    }
+    if ( is_home() )
+        $query->set( 'post_type', array( 'reconocimiento','post'));
+}
+ 	
+add_action( 'pre_get_posts', 'get_reconocimientos' );
