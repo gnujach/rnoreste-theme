@@ -21,8 +21,8 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
                 <img class="card-img-top" src="<?php echo get_theme_file_uri( '/img/alumnos.png' )?>" alt="Card image cap">
                 <div class="card-block">
                     <h3 class="card-title">Amor</h3>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <p class="card-text">Descripcion del valor.</p>
+                    <a href="#" class="btn btn-primary">Conoce mas</a>
                 </div>
             </div>
         </div>
@@ -31,8 +31,8 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
                 <img class="card-img-top" src="<?php echo get_theme_file_uri( '/img/alumnos.png' )?>" alt="Card image cap">
                 <div class="card-block">
                     <h3 class="card-title">Benedicencia</h3>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <p class="card-text">Descripcion del valor.</p>
+                    <a href="#" class="btn btn-primary">Conoce mas</a>
                 </div>
             </div>
         </div>
@@ -41,8 +41,8 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
                 <img class="card-img-top" src="<?php echo get_theme_file_uri( '/img/alumnos.png' )?>" alt="Card image cap">
                 <div class="card-block">
                     <h3 class="card-title">Solidaridad</h3>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    <p class="card-text">Descripcion del valor.</p>
+                    <a href="#" class="btn btn-primary">Conoce mas</a>
                 </div>
             </div>
         </div>        
@@ -53,8 +53,8 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
                 <img class="card-img-top" src="<?php echo get_theme_file_uri( '/img/alumnos.png' )?>" alt="Card image cap">
             <div class="card-block">
                 <h3 class="card-title">Respeto</h3>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <<p class="card-text">Descripcion del valor.</p>
+                    <a href="#" class="btn btn-primary">Vamos</a>
             </div>
             </div>
         </div>
@@ -63,8 +63,8 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
                 <img class="card-img-top" src="<?php echo get_theme_file_uri( '/img/alumnos.png' )?>" alt="Card image cap">
             <div class="card-block">
                 <h3 class="card-title">Compromiso</h3>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <p class="card-text">Descripcion del valor.</p>
+                    <a href="#" class="btn btn-primary">Vamos</a>
             </div>
             </div>
         </div>
@@ -73,8 +73,8 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
                 <img class="card-img-top" src="<?php echo get_theme_file_uri( '/img/alumnos.png' )?>" alt="Card image cap">
             <div class="card-block">
                 <h3 class="card-title">Confianza</h3>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+                <p class="card-text">Descripcion del valor.</p>
+                    <a href="#" class="btn btn-primary">Vamos</a>
             </div>
             </div>
         </div>        
