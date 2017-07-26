@@ -25,16 +25,15 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <body <?php body_class(); ?>>
 
-<div class="hfeed site" id="page">
-
+<div class="hfeed site" id="page">	
 	<!-- ******************* The Navbar Area ******************* -->
 	<div class="wrapper-fluid wrapper-navbar" id="wrapper-navbar">
 
 		<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content',
 		'understrap' ); ?></a>
 
-		<nav class="navbar navbar-toggleable-md  navbar-inverse bg-inverse">
-
+		   <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">   
+		  <!-- <nav class="navbar fixed-top navbar-light bg-faded">  -->
 		<?php if ( 'container' == $container ) : ?>
 			<div class="container">
 		<?php endif; ?>
@@ -80,3 +79,4 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</nav><!-- .site-navigation -->
 
 	</div><!-- .wrapper-navbar end -->
+	
