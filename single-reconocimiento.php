@@ -26,7 +26,7 @@ if (! is_user_logged_in() ) {
 			<main class="site-main" id="main">
 				<div class="row">
 				<?php while ( have_posts() ) : the_post(); ?>
-					<?php $meta = get_post_custom( the_ID() );?>					
+					<?php $meta = get_post_custom( get_the_ID() );?>					
 					<div class="row">
 						<div class="col-md-2">
 						<?php the_author_ID()?>
@@ -34,7 +34,7 @@ if (! is_user_logged_in() ) {
 							<?php echo "<img src=\"".get_avatar_url( get_the_author_meta('id') )."\" class=\"img-responsive img-circle\">";?>
 						</div>
 						<div class="col-md-8">
-							<?php $terms = get_the_terms( the_ID(), 'valores' )?>
+							<?php $terms = get_the_terms( get_the_ID(), 'valores' )?>
 							<h2><?php the_content();?></h2>
 							<h3><?php echo $terms[0]->name;?></h3>
 						</div>
