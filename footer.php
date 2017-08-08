@@ -17,26 +17,27 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 	<div class="<?php echo esc_html( $container ); ?>">
 
-		<div class="row">
+		<div class="row" style="background-color: #0275d8">
 
 			<div class="col-md-12">
 
 				<footer class="site-footer" id="colophon">
 
-					<div class="site-info">
+					<div class="site-info text-center">
 
-							<a href="<?php  echo esc_url( __( 'http://wordpress.org/','understrap' ) ); ?>"><?php printf( 
+							<!-- <a href="<?php  echo esc_url( __( 'http://wordpress.org/','understrap' ) ); ?>"><?php printf( 
 							/* translators:*/
 							esc_html__( 'Proudly powered by %s', 'understrap' ),'WordPress' ); ?></a>
-								<span class="sep"> | </span>
-					
-							<?php printf( // WPCS: XSS ok.
+								<span class="sep"> | </span> -->
+							<h3 style="color: #FFFFFF">Secretaría de Educación de Guanajuato </h3>
+							<h4 style="color: #FFFFFF">Delegación Regional Noreste </h4>
+							<!-- <?php printf( // WPCS: XSS ok.
 							/* translators:*/
 								esc_html__( 'Theme: %1$s by %2$s.', 'understrap' ), $the_theme->get( 'Name' ),  '<a href="'.esc_url( __('http://understrap.com', 'understrap')).'">understrap.com</a>' ); ?> 
 				
 							(<?php printf( // WPCS: XSS ok.
 							/* translators:*/
-								esc_html__( 'Version: %1$s', 'understrap' ), $the_theme->get( 'Version' ) ); ?>)
+								esc_html__( 'Version: %1$s', 'understrap' ), $the_theme->get( 'Version' ) ); ?>) -->
 					</div><!-- .site-info -->
 
 				</footer><!-- #colophon -->

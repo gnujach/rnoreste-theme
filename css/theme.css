@@ -9257,23 +9257,26 @@ h1.navbar-brand a:hover {
   border-radius: 10px;
   margin-top: 20px;
 }
-.valores-responsabilidad {
-  background: url(http://regionnoreste.homelinux.org/wp-content/themes/rnoreste-theme/img/bg_responsabilidad.png) center top repeat-x, url() center bottom repeat-x;
+.reconocimiento {
+  background: url(http://planet.gnome.org/img/bubble/post_topbg.png) center top repeat-x, url(http://planet.gnome.org/img/bubble/post_bottombg.png) center bottom repeat-x;
 }
-.valores-honestidad {
-  background: url(http://regionnoreste.homelinux.org/backbone/wp-content/themes/rnoreste-theme/img/bg_honestidad.png) center top repeat-x, url() center bottom repeat-x;
+.valores-responsabilidad h4 {
+    color: azure;
 }
-.valores-benedicencia {
-  background: url(http://regionnoreste.homelinux.org/wp-content/themes/rnoreste-theme/img/bg_benedicencia.png) center top repeat-x, url() center bottom repeat-x;
+.valores-honestidad h4 {
+  color: #2b542c;
 }
-.valores-amor {
-  background: url(http://regionnoreste.homelinux.org/wp-content/themes/rnoreste-theme/img/bg_amor.png) center top repeat-x, url() center bottom repeat-x;
+.valores-benedicencia  {
+  color: #e4b9b9;
 }
-.valores-union {
-  background: url(http://regionnoreste.homelinux.org/wp-content/themes/rnoreste-theme/img/bg_union.png) center top repeat-x, url() center bottom repeat-x;
+.valores-amor h4 {
+  color: peru;
 }
-.valores-generosidad {
-  background: url(http://regionnoreste.homelinux.org/wp-content/themes/rnoreste-theme/img/bg_generosidad.png) center top repeat-x, url() center bottom repeat-x;
+.valores-union h4 {
+  color: grey;
+}
+.valores-generosidad h4 {
+  color: blue;
 }
 .entry-header {
   border-radius: 5px 5px 5px 5px;
