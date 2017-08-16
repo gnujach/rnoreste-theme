@@ -12,12 +12,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 ?>
 
 <?php get_sidebar( 'footerfull' ); ?>
-
+</div>
 <div class="wrapper" id="wrapper-footer">
 
-	<div class="<?php echo esc_html( $container ); ?>">
+	<!-- <div class="<?php echo esc_html( $container ); ?>"> -->
+	<div class="container-fluid">
 
-		<div class="row" style="background-color: #0275d8">
+		<div class="row" style="background-color: #EFE5E5">
 
 			<div class="col-md-12">
 
@@ -29,8 +30,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 							/* translators:*/
 							esc_html__( 'Proudly powered by %s', 'understrap' ),'WordPress' ); ?></a>
 								<span class="sep"> | </span> -->
-							<h3 style="color: #FFFFFF">Secretaría de Educación de Guanajuato </h3>
-							<h4 style="color: #FFFFFF">Delegación Regional Noreste </h4>
+							<h3 style="color: #00509C">Secretaría de Educación de Guanajuato </h3>
+							<h4 style="color: #00509C">Delegación Regional Noreste </h4>
 							<!-- <?php printf( // WPCS: XSS ok.
 							/* translators:*/
 								esc_html__( 'Theme: %1$s by %2$s.', 'understrap' ), $the_theme->get( 'Name' ),  '<a href="'.esc_url( __('http://understrap.com', 'understrap')).'">understrap.com</a>' ); ?> 

@@ -9290,3 +9290,57 @@ h1.navbar-brand a:hover {
 .entry-content {
   padding: 4px 12px 2px 26px;
 }
+.amor-panel {
+  background-color: #E71096;
+  border-color: #bebebe;
+}
+.benedicencia-panel {
+  background-color: #C5A6E2;
+  border-color: #EFE5E5;
+}
+.respeto-panel {
+  background-color: #C5A6E2;
+  border-color: #EFE5E5;
+}
+.respeto-panel {
+  background-color: #ECA45C;
+  border-color: #EFE5E5;
+}
+.honestidad-panel {
+  background-color: #A3C5E9;
+  border-color: #EFE5E5;
+}
+.responsabilidad-panel {
+  background-color: #C3E76A;
+  border-color: #EFE5E5;
+}
+.generosidad-panel {
+  background-color: #00509C;
+  border-color: #EFE5E5;
+}
+.union-panel {
+  background-color: #9A989A;
+  border-color: #EFE5E5;
+}
+.vive-panel {
+  background-color: #E24ACE;
+  border-color: #EFE5E5;
+}
+.noticias-panel {
+  background-color: #7ED321;
+  border-color: #EFE5E5;
+}
+.card-title {
+  color:white;
+}
+.card-text {
+  color:white;
+}
+/* @keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+.img-fluid {
+  animation: App-logo-spin infinite 10s linear;
+  height: 80px;
+} */
