@@ -26,19 +26,24 @@ if (! is_user_logged_in() ) {
 			<main class="site-main" id="main">
 				<div class="row">
 				<?php while ( have_posts() ) : the_post(); ?>
-					<?php $meta = get_post_custom( get_the_ID() );?>					
+					<?php $meta = get_post_custom( get_the_ID() );
+					$user_info = get_userdata( $meta['reconocimiento_usuario'][0] );
+					$user_name = $user_info->first_name. ' '.$user_info->last_name;;
+				?>
+
 					<div class="row">
-						<div class="col-md-2">
-						<?php the_author_ID()?>
+						<div class="col-md-1">
+						<!-- <?php the_author_ID()?> -->
 							<?php// echo get_avatar( 1 )?>
 							<?php echo "<img src=\"".get_avatar_url( get_the_author_meta('id') )."\" class=\"img-responsive img-circle\">";?>
 						</div>
-						<div class="col-md-8">
-							<?php $terms = get_the_terms( get_the_ID(), 'valores' )?>
-							<h2><?php the_content();?></h2>
+						<div class="col-md-10 bgreconocimiento">
+							<?php $terms = get_the_terms( get_the_ID(), 'valores' )?>							
 							<h3><?php echo $terms[0]->name;?></h3>
+							<h1><?php echo $user_name?></h1>
+							<h2><?php the_content();?></h2>
 						</div>
-						<div class="col-md-2">
+						<div class="col-md-1">
 							<?php echo "<img src=\"".get_avatar_url( $meta['reconocimiento_usuario'][0] )."\" class=\"img-responsive img-circle\">";?>
 						</div>
 						<?php understrap_post_nav(); ?>
