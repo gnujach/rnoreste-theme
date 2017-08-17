@@ -13,7 +13,7 @@
 		if ( has_post_thumbnail() ) {
 			$large_image_url = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'large' );	
 			?>
-			<img src="<?php echo $large_image_url[0]?>" class="img-fluid mx-auto img-thumbnail">
+			<img src="<?php echo $large_image_url[0]?>" class="img-fluid mx-auto mx-auto d-block img-thumbnail">
 		<?php }?>
 		<div></div>
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
