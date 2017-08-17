@@ -42,8 +42,12 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 								* Include the Post-Format-specific template for the content.
 								* If you want to override this in a child theme, then include a file
 								* called content-___.php (where ___ is the Post Format name) and that will be used instead.
-								*/							
-							get_template_part( 'loop-templates/content', get_post_format() );
+								*/	
+								if ( 'reconocimiento' == get_post_type() ) {	
+									get_template_part( 'loop-templates/content', 'reconocimiento' );
+								} else {
+									//get_template_part( 'loop-templates/content', get_post_type() );
+								}
 							// get_template_part( 'loop-templates/content', 'none' );
 							?>
 					<?php endwhile; ?>

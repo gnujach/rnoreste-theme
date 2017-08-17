@@ -14,6 +14,7 @@
 		 <div class="text-center title-color-post"><h4><?php echo $terms[0]->name;?></h4></div>
 	 </header><!-- .entry-header -->
 
+		<?php if ( 'reconocimiento' == get_post_type() ) : ?>
 			<div class="entry-meta">
 				<!-- <?php understrap_posted_on(); ?> -->
 			</div><!-- .entry-meta -->
@@ -21,17 +22,19 @@
 			<div class="row">
 				<div class="col-md-1">
 					<?php echo "<img src=\"".get_avatar_url( get_the_author_meta('id') )."\" class=\"rounded float-left\">";?>
-					<span> Autor </span>
 				</div>
-				<div class="col-md-11">
+				<div class="col-md-10">
 					<?php
-						echo get_the_post_thumbnail( $post->ID, 'large' );
-						the_excerpt();
+					the_excerpt();
 						// the_content();
 					?>
 				</div>
+				<div class="col-md-1">
+					<?php echo "<img src=\"".get_avatar_url( $meta['reconocimiento_usuario'][0] )."\" class=\"rounded float-right\">";?>
+				</div>
 			</div>
 			</div><!-- .entry-content -->
+		<?php endif; ?>
 
 	
 	<!-- <?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>-->
@@ -48,7 +51,7 @@
 
 	<footer class="entry-footer">
 
-		 <!-- <?php understrap_entry_footer(); ?>  -->
+		<!-- <?php understrap_entry_footer(); ?> -->
 		<div class="text-right" <?php understrap_posted_on(); ?></div>
 	</footer><!-- .entry-footer -->
 
