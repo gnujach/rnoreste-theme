@@ -45,9 +45,10 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 								*/	
 								if ( 'reconocimiento' == get_post_type() ) {	
 									get_template_part( 'loop-templates/content', 'reconocimiento' );
-								} else {
-									//get_template_part( 'loop-templates/content', get_post_type() );
-								}
+								} 
+							// 	else {
+							// 		//get_template_part( 'loop-templates/content', get_post_type() );
+							// 	}
 							// get_template_part( 'loop-templates/content', 'none' );
 							?>
 					<?php endwhile; ?>
