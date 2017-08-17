@@ -1,7 +1,7 @@
 <?php
 /**
  * The template for displaying all single posts.
- *
+ * 
  * @package understrap
  */
 
@@ -16,9 +16,9 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 
 		<div class="row">
 
-			<!-- Do the left sidebar check -->
+			<!-- Do the left sidebar check 
 			<?php get_template_part( 'global-templates/left-sidebar-check', 'none' ); ?>
-
+			-->
 			<main class="site-main" id="main">
 
 				<?php while ( have_posts() ) : the_post(); ?>

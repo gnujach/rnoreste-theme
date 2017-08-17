@@ -1,7 +1,7 @@
 <?php
 /**
  * Single post partial template.
- *
+ * Template Name: Full Width Page
  * @package understrap
  */
 
