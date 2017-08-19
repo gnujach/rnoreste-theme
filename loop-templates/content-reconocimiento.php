@@ -11,7 +11,11 @@
 	<?php $terms = get_the_terms( get_the_ID(), "valores" );?>
 	<?php $meta = get_post_custom( get_the_ID() );?>
 	<header class="entry-header">
-		 <div class="text-center title-color-post"><h4><?php echo $terms[0]->name;?></h4></div>
+		<div class="row"><div class="col-md-5"></div>
+		<div class="col-md-2">
+		 <div class="text-center title-color-post-<?php echo $terms[0]->name;?>"><h5><?php echo $terms[0]->name;?></h5></div>
+		 </div><div class="col-md-5"></div>
+		</div>
 	 </header><!-- .entry-header -->
 
 		<?php if ( 'reconocimiento' == get_post_type() ) : ?>
@@ -26,7 +30,6 @@
 				<div class="col-md-10">
 					<?php
 					the_excerpt();
-						// the_content();
 					?>
 				</div>
 				<div class="col-md-1">

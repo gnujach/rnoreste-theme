@@ -9260,23 +9260,26 @@ h1.navbar-brand a:hover {
 .reconocimiento {
   background: url(http://planet.gnome.org/img/bubble/post_topbg.png) center top repeat-x, url(http://planet.gnome.org/img/bubble/post_bottombg.png) center bottom repeat-x;
 }
-.valores-responsabilidad h4 {
-    color: azure;
+.valores-responsabilidad h5 {
+    color: whitesmoke;
 }
-.valores-honestidad h4 {
-  color: #2b542c;
+.valores-honestidad h5 {
+  color: whitesmoke;
 }
-.valores-benedicencia  {
-  color: #e4b9b9;
+.valores-benedicencia h5 {
+  color: whitesmoke;
 }
-.valores-amor h4 {
-  color: peru;
+.valores-amor h5 {
+  color:whitesmoke;
 }
-.valores-union h4 {
-  color: grey;
+.valores-union h5 {
+  color: whitesmoke;
 }
-.valores-generosidad h4 {
-  color: blue;
+.valores-generosidad h5 {
+  color: whitesmoke;
+}
+.valores-respeto h5 {
+  color: whitesmoke;
 }
 .entry-header {
   border-radius: 5px 5px 5px 5px;
@@ -9339,6 +9342,35 @@ h1.navbar-brand a:hover {
 .img-circle {
   border-radius: 30px;
 }
+.title-color-post-Generosidad {
+  background-color: #00509C;
+  border-radius: 0.25rem;
+}
+.title-color-post-Respeto {
+  background-color: #ECA45C;
+  border-radius: 0.25rem;
+}
+.title-color-post-Amor {
+  background-color: #E71096;
+  border-radius: 0.25rem;
+}
+.title-color-post-Benedicencia {
+  background-color: #C5A6E2;
+  border-radius: 0.25rem;
+}
+.title-color-post-Honestidad {
+  background-color: #A3C5E9;
+  border-radius: 0.25rem;
+}
+.title-color-post-Responsabilidad {
+  background-color: #C3E76A;
+  border-radius: 0.25rem;
+}
+.title-color-post-Unión {
+  background-color: #9A989A;
+  border-radius: 0.25rem;
+}
+
 /* @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
