@@ -32,11 +32,13 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 					?>
 
 					<h1><?php esc_html_e( 'About:', 'understrap' ); ?><?php echo esc_html( $curauth->nickname ); ?></h1>
-
+					<?php $metaUser =  get_user_meta ( $curauth->ID );?>
 					<?php if ( ! empty( $curauth->ID ) ) : ?>
 						<?php echo get_avatar( $curauth->ID ); ?>
 					<?php endif; ?>
-
+					<?php $video_url1 = get_field ( 'video_user', $curauth->ID) ?>
+					<?php $video_url = wp_get_attachment_url( ($metaUser['video_user'][0])) ;?>
+					<video src="<?php echo $video_url?>" autoplay controls controlsList="nodownload" ></video>
 					<dl>
 						<?php if ( ! empty( $curauth->user_url ) ) : ?>
 							<dt><?php esc_html_e( 'Website', 'understrap' ); ?></dt>
@@ -49,10 +51,12 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 							<dt><?php esc_html_e( 'Profile', 'understrap' ); ?></dt>
 							<dd><?php echo esc_html( $curauth->user_description ); ?></dd>
 						<?php endif; ?>
+						
 					</dl>
 
 					<h2><?php esc_html_e( 'Posts by', 'understrap' ); ?> <?php echo esc_html( $curauth->nickname ); ?>
 						:</h2>
+
 
 				</header><!-- .page-header -->
 
