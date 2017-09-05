@@ -24,18 +24,21 @@
 			</div><!-- .entry-meta -->
 			<div class="entry-content">
 			<div class="row">
-				<div class="col-md-1">
-					<?php echo "<img src=\"".get_avatar_url( get_the_author_meta('id') )."\" class=\"rounded float-left\">";?>
+				<div class="col-md-2">
+					<div><?php echo "<img src=\"".get_avatar_url( get_the_author_meta('id') )."\" class=\"rounded\">";?></div>
+					<div class="text-left text-nowrap"><span><?php print ("<a href=\"/author/".get_the_author_meta('nickname')."\">".get_the_author_meta('nickname')."</a>" );?></span></div>
 				</div>
-				<div class="col-md-10">
+				<div class="col-md-8">
 					<?php
 					the_excerpt();
 					?>
 				</div>
-				<div class="col-md-1">
-					<?php echo "<img src=\"".get_avatar_url( $meta['reconocimiento_usuario'][0] )."\" class=\"rounded float-right\">";?>
+				<div class="col-md-2">
+					<?php $destinatario = get_userdata( $meta['reconocimiento_usuario'][0] );?>
+					<?php echo "<img src=\"".get_avatar_url( $meta['reconocimiento_usuario'][0] )."\" class=\"rounded \">";?>
+					<div class="text-left text-nowrap"><span><?php print ("<a href=\"/author/".$destinatario->user_login."\">".$destinatario->user_login."</a>" );?></span></div>					
 				</div>
-			</div>
+			</div>			
 			</div><!-- .entry-content -->
 		<?php endif; ?>
 

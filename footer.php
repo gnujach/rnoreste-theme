@@ -30,8 +30,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 							/* translators:*/
 							esc_html__( 'Proudly powered by %s', 'understrap' ),'WordPress' ); ?></a>
 								<span class="sep"> | </span> -->
-							<h3 style="color: #00509C">Secretaría de Educación de Guanajuato </h3>
-							<h4 style="color: #00509C">Delegación Regional Noreste </h4>
+							<h6 style="color: #00509C">Secretaría de Educación de Guanajuato </h6>
+							<h7 style="color: #00509C">Delegación Regional Noreste </h7>
 							<!-- <?php printf( // WPCS: XSS ok.
 							/* translators:*/
 								esc_html__( 'Theme: %1$s by %2$s.', 'understrap' ), $the_theme->get( 'Name' ),  '<a href="'.esc_url( __('http://understrap.com', 'understrap')).'">understrap.com</a>' ); ?> 
