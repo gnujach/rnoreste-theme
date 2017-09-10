@@ -45,7 +45,6 @@
 	
 	<!-- <?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>-->
 
-	
 		<?php
 		wp_link_pages( array(
 			'before' => '<div class="page-links">' . __( 'Pages:', 'understrap' ),

@@ -19,7 +19,7 @@ if (! is_user_logged_in() ) {
 
 	<div class="<?php echo esc_html( $container ); ?>" id="content" tabindex="-1">
 
-		<div class="row">			
+		 <div class="row">			 
 			<!-- Do the left sidebar check -->
 			<?php get_template_part( 'global-templates/left-sidebar-check', 'none' ); ?>
 
@@ -47,7 +47,13 @@ if (! is_user_logged_in() ) {
 							<?php echo "<img src=\"".get_avatar_url( $meta['reconocimiento_usuario'][0] )."\" class=\"img-responsive img-circle\">";?>
 						</div>
 						<?php understrap_post_nav(); ?>
-
+					</div>
+					<div class="row">
+						<div class="col-md-12">
+							<?php if(function_exists('wp_ulike')) wp_ulike('get');?>
+						</div>
+					</div>
+						
 					<?php
 					// If comments are open or we have at least one comment, load up the comment template.
 					// if ( comments_open() || get_comments_number() ) :
@@ -58,7 +64,7 @@ if (! is_user_logged_in() ) {
 				<?php endwhile; // end of the loop. ?>
 			</div>
 			</main><!-- #main -->
-
+		
 		</div><!-- #primary -->
 
 		<!-- Do the right sidebar check -->
