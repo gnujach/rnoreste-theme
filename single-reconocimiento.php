@@ -42,6 +42,7 @@ if (! is_user_logged_in() ) {
 							<h3><?php echo $terms[0]->name;?></h3>
 							<h1><?php echo $user_name?></h1>
 							<h2><?php the_content();?></h2>
+							<div class="foter"></div>
 						</div>
 						<div class="col-md-1">
 							<?php echo "<img src=\"".get_avatar_url( $meta['reconocimiento_usuario'][0] )."\" class=\"img-responsive img-circle\">";?>
